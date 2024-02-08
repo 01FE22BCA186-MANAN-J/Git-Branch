@@ -48,11 +48,22 @@ return(operand1*operand2);
  * @param operand2 The second operand in the division operation.
  * @return The division of operand1 by operand2.
  */
+
+
 float division(float operand1,float operand2)
 {
 return(operand1/operand2);
 }   
 
+
+float square(float side){
+    return(side*side);
+}
+
+float cube(float side)
+{
+    return(side*side*side);
+}
 
 public static void main(String[] args){
 Calculator2 calc = new Calculator2(); 
@@ -62,4 +73,6 @@ System.out.println("Addition: " +calc.addition(5,10));
 System.out.println("Subtraction: "+calc.substraction(15,3));
 System.out.println("Multiplication:  "+calc.multiplicaton(4, 7));
 System.out.println("Division: "+calc.division(10, 20));
+System.out.println("Square: "+calc.square(25));
+System.out.println("Cube : "+calc.cube(66));
 }}
